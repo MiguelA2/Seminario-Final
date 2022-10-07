@@ -1,3 +1,7 @@
+<?php
+	include 'conexion.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -21,13 +25,15 @@
 						</div>
 						<ul class="list-group list-group-flush">
 						    <li class="list-group-item">
+						    	<form action="php/Registro.php" method="POST">
+						    		<button class="btn btn-success border-dark" name="enviar">Opcion 1</button>
 								<table class="table table-striped" align="left"  >
 									<tr>
 										<th >
 											Codigo:
 										</th>
 										<td>
-											<input type="text" name="codigo" placeholder="Ingrese codigo" class="form-control" id="validationDefault05" required>
+											<input type="text" name="codigo" placeholder="Ingrese codigo" class="form-control" id="Id" required>
 										</td>
 									</tr>
 									<tr>
@@ -35,7 +41,7 @@
 											Nombre:
 										</th>
 										<td>
-											<input type="text" name="nombre" placeholder="Ingrese nombre" class="form-control" id="validationDefault05" required>
+											<input type="text" name="nombre" placeholder="Ingrese nombre" class="form-control" id="Nombre" required>
 										</td>
 									</tr>
 									<tr>
@@ -43,7 +49,7 @@
 											Descripcion:
 										</th>
 										<td>
-											<input type="text" name="descripcion" placeholder="Ingrese Descripcion" class="form-control" id="validationDefault05" required>
+											<input type="text" name="descripcion" placeholder="Ingrese Descripcion" class="form-control" id="descripcion" required>
 										</td>
 									</tr>
 									<tr>
@@ -51,20 +57,18 @@
 											Precio:
 										</th>
 										<td>
-											<input type="number" name="precio" placeholder="Ingrese precio" class="form-control" id="validationDefault05" required>
+											<input type="number" name="precio" placeholder="Ingrese precio" class="form-control" id="Precio" required>
 										</td>
 									</tr>
 								</table>
+							  </form>
 						    </li>
 						    <li class="list-group-item">
-						    	<button class="btn btn-success border-dark" name="enviar">Opcion 1</button>
+						    	
 						    	<input  class="btn btn-success border-dark" type="submit" value="Opcion 2">
 						    	<input  class="btn btn-success border-dark" type="reset" value="Opcion 3">
 						    </li>
 						</ul>
-
-
-						
 					</div>
 				</div>
 			</div>

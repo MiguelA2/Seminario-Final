@@ -4,7 +4,7 @@
 	$contrasenha = "";
 	$BD          = "parcialF";
 	
-	$conexion = new mysqli ($servidor, $usuario, $contrasenha, $BD);
+	$conexion = mysqli_connect($servidor, $usuario, $contrasenha, $BD);
 	
 	if(!$conexion) {
 		echo '<script language="javascript">alert("Fallo la conexion.");window.location.href="../index.html"</script>';
